@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/html">
+<head>
+  <title>Virtu</title>
+  <link th:href="@{/styles/homePage.css}" rel="stylesheet" />
+  <script type="text/javascript" th:src="@{/javascript/homePage.js}"></script>
+</head>
+<body>
+<p>This page works!!!<p/>
+<p>Test</p>
+
+<div th:each="product : ${productsList}" class="products">
+  <span>Product </span><span th:text="${product.productName}">Product Name.</span></br><hr>
+</div>
+
+</body>
+</html>
